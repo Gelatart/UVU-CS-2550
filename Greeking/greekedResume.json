@@ -1,0 +1,120 @@
+{
+ 
+  "fullName": "Lorem Ipsum",
+  "email": "dolor.sit.amet@consectetur.adipiscing",
+  "categories": [
+    {
+      "name": "Summary",
+      "desc": "Elit phasellus vel-porttitor, mi at interdum, libero, aliquam commodo massa magna luctus lacinia, urna viverra a, sed ut commodo dolor a"
+    },
+    {
+      "name": "Skills",
+      "accomplishments": [
+        "Lobortis nulla praesent Ac, Nisi, Lorem, NamFacilisis, RHONCUS, semper Nulla",
+        "Dictum commodo nunc 102 ET (tincidunt suspendisse), nec nisi vel velit lacinia efficitur"
+      ]
+    },
+    {
+      "name": "Educational Background",
+      "schools": [
+        {
+          "school": "Eu Eu Tortor",
+          "duration": "(Ut 2018 - Pulvinar)",
+          "code": "uvu",
+          "desc": "Erat quis Ipsum Mattis at",
+          "gpa": "3.71 COMMODO (massa tempus 4.0)"
+        },
+        {
+          "school": "Nunc Non Posuere",
+          "duration": "(Sapien 2013 - Nullam 2014, Id 2015 - Dictum 2017)",
+          "code": "byu",
+          "desc": "",
+          "gpa": "3.40 ODIO (integer sed 4.0)"
+        },
+        {
+          "school": "Eros Ac. Sem Porttitor Condimentum",
+          "duration": "(Non 2009 - Ac 2013)",
+          "code": "maeser",
+          "desc": "",
+          "gpa": "3.68 NIBH (praesent vel 4.0)"
+        }
+      ]
+    },
+    {
+      "name": "Work Experience",
+      "jobs": [
+        {
+          "company": "ArcuSollicitudin",
+          "duration": "(2018 - 2019)",
+          "code": "captionCall",
+          "desc": "Tempus nibh a Finibus Turpis, suspendisse sed leo varius justo, interdum congue eget ac dui vestibulum vulputate diam vehicula, ultrices mi",
+          "accomplishments": []
+        },
+        {
+          "company": "Pharetra/Egestas Lorem",
+          "duration": "(2016)",
+          "code": "nudge",
+          "desc": "",
+          "accomplishments": [
+            "Vivamus vel mauris At Justo Gravida imperdiet curabitur in",
+            "Justo rhoncus porttitor ante dictum sodales, dolor vestibulum ac, dui eu purus"
+          ]
+        },
+        {
+          "company": "AUCTOR Commodo",
+          "duration": "(2015)",
+          "code": "",
+          "desc": "",
+          "accomplishments": []
+        },
+        {
+          "company": "Pellentesque Vitae",
+          "duration": "(2015)",
+          "code": "vector",
+          "desc": "",
+          "accomplishments": [
+            "Mattis $4,824 quam pellentesque Mattis nisl vitae pellentesque auctor ex",
+            "Ex suscipit metus, sit amet eleifend tortor tortor",
+            "Id Lectus sed Sed est lectus curabitur a-rutrum-ipsum et aliquam nulla duis"
+          ]
+        },
+        {
+          "company": "Efficitur.metus",
+          "duration": "(2014)",
+          "code": "ancestry",
+          "desc": "Sit Amet Luctus Pellentesque pellentesque eu pellentesque ex",
+          "accomplishments": []
+        },
+        {
+          "company": "Ut Iaculis",
+          "duration": "(2014 - 2016)",
+          "code": "",
+          "desc": "",
+          "accomplishments": []
+        },
+        {
+          "company": "LIGULA Sed Imperdiet",
+          "duration": "(2013)",
+          "code": "",
+          "desc": "",
+          "accomplishments": []
+        }
+      ]
+    },
+    {
+      "name": "Internships",
+      "internship": "FELISMetus",       
+      "duration": "(Id 2016)",
+      "code": "opNoobs",
+      "accomplishments": [
+        "Fermentum Diam: Scelerisque ut fusce egestas arcu et dolor interdum, ultrices phasellus in",
+        "Tellus feugiat varius velit eu bibendum sem sed non mi, ante nulla at consectetur nulla et varius nisl ut laoreet porttitor vestibulum phasellus rutrum"
+      ]
+    },
+    {
+      "name": "Awards",
+      "award": "Eros A Dapibus",
+      "year": "(2013)"
+    }
+  ]
+}

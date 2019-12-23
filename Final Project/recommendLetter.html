@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset = "utf-8">
+  <title>Letter Generated</title>
+  <style>
+    body {
+      font-family: "Times New Roman", Times, serif; 
+      margin: 50px;
+      width: 650px;
+    }
+  </style>
+</head>
+<body> 
+  <script>
+    function parseQuery(queryString) {
+      var query = {};
+      var pairs = (queryString[0] === '?' ? queryString.substr(1) : queryString).split('&');
+      for (var i = 0; i < pairs.length; i++) {
+        var pair = pairs[i].split('=');
+        var fix = pair[1].replace(/\+/g, ' ');
+        query[decodeURIComponent(pair[0])] = decodeURIComponent(fix || '');
+      }
+      return query;
+    }
+    function returnMonth(num) {
+      if(num == 01) {
+        return "January";
+      } else if (num == 02) {
+        return "February";
+      } else if (num == 03) {
+        return "March";
+      } else if (num == 04) {
+        return "April";
+      } else if (num == 05) {
+        return "May";
+      } else if (num == 06) {
+        return "June";
+      } else if (num == 07) {
+        return "July";
+      } else if (num == 08) {
+        return "August";
+      } else if (num == 09) {
+        return "September";
+      } else if (num == 10) {
+        return "October";
+      } else if (num == 11) {
+        return "November";
+      } else if (num == 12) {
+        return "December";
+      }
+    }
+    var generic = true;
+    var values = parseQuery(window.location.search);
+    console.log(values);
+    var body = document.getElementsByTagName("BODY")[0]; 
+    var month = values.today.slice(5,7);
+    var day = values.today.slice(8,10);
+    var year = values.today.slice(0,4);
+    body.innerHTML += returnMonth(month) + ' ' + day + ', ' + year + '<br>';
+    body.innerHTML += '<br>';
+    body.innerHTML += '<br>';
+    if(values.committeeName) {
+      body.innerHTML += values.committeeName + '<br>';
+      if(!values.committeeAddress && !values.committeeCity) {
+        body.innerHTML += '<br>';
+        body.innerHTML += '<br>';
+      }
+    } if(values.committeeAddress) {
+      body.innerHTML += values.committeeAddress + '<br>';
+      if(!values.committeeCity) {
+        body.innerHTML += '<br>';
+        body.innerHTML += '<br>';
+      }
+    } if(values.committeeCity) {
+      body.innerHTML += values.committeeCity + '<br>';
+      body.innerHTML += '<br>';
+      body.innerHTML += '<br>';
+    }
+    if(values.committeeName != '') {
+      body.innerHTML += 'Dear ' + values.committeeName + ',<br>';
+    } else {
+      body.innerHTML += 'To Whom It May Concern,<br>';
+    }
+    body.innerHTML += '<br>';
+    if(values.programType) {
+      body.innerHTML += 'I am pleased to write you this recommendation letter on behalf of ' + values.studentFirst + ' ' + values.studentLast + ' for the admission to your ' + values.programType + ' program.<br>';
+    } else {
+      body.innerHTML += 'I am pleased to write you this recommendation letter on behalf of ' + values.studentFirst + ' ' + values.studentLast + '.<br>';
+    }
+    body.innerHTML += '<br>';
+    if(values.length != '' && values.units != '') {
+      body.innerHTML += 'I have known ' + values.studentFirst + ' for ' + values.length + ' ' + values.units + '. ';
+    } else if (values.length == '' && values.units != undefined) {
+      body.innerHTML += 'I have known ' + values.studentFirst + ' for ' +  values.units + '. ';
+    }
+    if(values.templateConfirm == 'Write') {
+      generic = false;
+    } 
+    if(generic == true) {
+      body.innerHTML += values.intro + ' ';
+      body.innerHTML += 'For the reasons I will get into, I believe ' + values.studentFirst + ' would be an excellent candidate.<br>';
+      body.innerHTML += '<br>';
+      body.innerHTML += values.studentFirst + ' is a skilled student. ';
+      body.innerHTML += values.skills + '<br>';
+      body.innerHTML += '<br>';
+      body.innerHTML += values.studentFirst + ' is an accomplished and responsible student. ';
+      body.innerHTML += values.accomplishments + '<br>';
+      body.innerHTML += '<br>';
+      body.innerHTML += 'As you can tell, I hold ' + values.studentFirst + ' in high regard, and I am confident in my recommendation. I see success in their future, and they will bring an important contribution to your institution. ';
+      body.innerHTML += values.closing + ' ';
+    } else {
+      body.innerHTML += values.intro + '<br>';
+      body.innerHTML += '<br>';
+      body.innerHTML += values.skills + '<br>';
+      body.innerHTML += '<br>';
+      body.innerHTML += values.accomplishments + '<br>';
+      body.innerHTML += '<br>';
+      body.innerHTML += values.closing + ' ';
+    }
+    body.innerHTML += 'If you have any questions and concerns, please feel free to contact me.';
+    if(values.emailContact != '') {
+      body.innerHTML += ' My email is ' + values.emailContact + '.';
+    } if(values.phoneContact != '') {
+      body.innerHTML += ' My phone number is ' + values.phoneContact + '.';
+    } if(values.mailContact != '') {
+      body.innerHTML += ' My mailing address is ' + values.mailContact + '.';
+    } 
+    body.innerHTML += '<br>';
+    if(values.thoughts != '') {
+      body.innerHTML += '<br>';
+      body.innerHTML += 'P.S.: ' + values.thoughts + '<br>';
+      body.innerHTML += '<br>';
+    }
+    body.innerHTML += '<br>';
+    body.innerHTML += 'Sincerely,<br>';
+    /*if(vars.signatureImage != null) {
+      b.innerHTML += '<img src="' + vars.signatureImage + '" alt="Signature image"><br>';
+    } else {
+      b.innerHTML += '<br>';
+      b.innerHTML += '<br>';
+    }*/
+    body.innerHTML += '<br>';
+    body.innerHTML += '<br>';
+    body.innerHTML += '<br>';
+    body.innerHTML += values.professorFirst + ' ' + values.professorLast + '<br>';
+    body.innerHTML += '<br>';
+    body.innerHTML += values.professorSchool + '<br>';
+    body.innerHTML += values.professorDepartment + '<br>';
+    body.innerHTML += values.professorRoles;
+  </script>
+</body>
+</html>

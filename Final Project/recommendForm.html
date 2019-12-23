@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset = "utf-8">
+  <title>Letter Form Submission</title>
+  <style>
+    label {
+      font-weight: bold;
+    }
+    legend {
+      font-weight: bold;
+      color: red;
+    }
+    p, input[type=text], input[type=email], input[type=tel], input[type=date], input[type=number], textarea {
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+
+  <form action="recommendLetter.html" target="_blank" method="GET">
+    <fieldset>
+      <legend>Recommendation Letter Form Submission</legend>
+      <p>
+        <label for="asterisk">* = Required</label><br>
+      </p>
+      <p>
+        <label for="professorFirst">*Professor's First Name</label><br>
+        <input type="text" id="professorFirst" name="professorFirst" placeholder="First name" required>
+      </p>
+      <p>
+        <label for="professorLast">*Professor's Last Name</label><br>
+        <input type="text" id="professorLast" name="professorLast" placeholder="Last name" required>
+      </p>
+      <p>
+        <label for="emailContact">Professor's Email</label><br>
+        <input type="email" name="emailContact" id="emailContact" placeholder="Email to reach you">
+      </p>
+      <p>
+        <label for="phoneContact">Professor's Phone #</label><br>
+        <input type="tel" name="phoneContact" id="phoneContact" placeholder="Phone # to reach you" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title='(999)-999-9999'>
+      </p>
+      <p>
+        <label for="mailContact">Professor's Mailing Address</label><br>
+        <input type="text" name="mailContact" id="mailContact" placeholder="Address to send mail to">
+      </p>
+      <p>
+        <label for="professorSchool">Professor's College</label><br>
+        <input type="text" id="professorSchool" name="professorSchool" placeholder="College professor teaches at">
+      </p>
+      <p>
+        <label for="professorDepartment">Professor's College Department</label><br>
+        <input type="text" id="professorDepartment" name="professorDepartment" placeholder="College department">
+      </p>
+      <p>
+        <label for="professorRoles">Professor's Important Roles</label><br>
+        <input type="text" id="professorRoles" name="professorRoles" placeholder="Roles at college">
+      </p>
+      <p>
+        <label for="studentFirst">*Student's First Name</label><br>
+        <input type="text" id="studentFirst" name="studentFirst" placeholder="First name" required>
+      </p>
+      <p>
+        <label for="studentLast">*Student's Last Name</label><br>
+        <input type="text" id="studentLast" name="studentLast" placeholder="Last name" required>
+      </p>
+      <p>
+        <label for="committeeName">Name of  Committee</label><br>
+        <input type="text" id="committeeName" name="committeeName" placeholder="Name">
+      </p>
+      <p>
+        <label for="committeeAddress">Address of Committee</label><br>
+        <input type="text" id="committeeAddress" name="committeeAddress" placeholder="Address">
+      </p>
+      <p>
+        <label for="committeeCity">City, State, and Zip Code of Committee</label><br>
+        <input type="text" id="committeeCity" name="committeeCity" placeholder="City, State, Zip">
+      </p>
+      <p>
+        <label for="programType">Type of Program Applying For</label><br>
+        <input type="text" id="programType" name="programType" placeholder="Program">
+      </p>
+      <p>
+        <label for="today">*Today's date</label><br>
+        <input type="date" name="today" id="today" required>
+      </p>
+      <p>
+        <label for="length">Length Known</label><br>
+        <input type="number" name="length" id="length" placeholder="Length of time">
+      </p>
+      <p>
+        <label for="units">Time Units</label><br>
+        <input type="radio" name="units" value="months">Months<br>
+        <input type="radio" name="units" value="years">Years<br>
+      </p>
+      <p>
+        <label for="templateConfirm">*Would you like to write out most of the letter content, grouped in themed sections, or to have more of it filled out for you, and you add some personalized details?</label><br>
+        <input type="radio" name="templateConfirm" value="Write" required>Write out most of it myself<br>
+        <input type="radio" name="templateConfirm" value="Generic" required>Have a more generic template and I add personalized details<br>
+      </p>
+      <p>
+        <label for="intro">Introductory Summary</label><br>
+        <textarea id="intro" name="intro" placeholder="Beginning summary thoughts to start off the letter proper" rows="7"></textarea>
+      </p>
+      <p>
+        <label for="skills">Skills</label><br>
+        <textarea id="skills" name="skills" placeholder="Section emphasizing the skills and abilities of the student" rows="7"></textarea>
+      </p>
+      <p>
+        <label for="accomplishments">Accomplishments and Roles</label><br>
+        <textarea id="accomplishments" name="accomplishments" placeholder="Section emphasizing some of the student's accomplishments and any important roles they have held" rows="7"></textarea>
+      </p>
+      <p>
+        <label for="closing">Closing Section</label><br>
+        <textarea id="closing" name="closing" placeholder="Conclusion and wrap-up of the main content of the letter" rows="7"></textarea>
+      </p>
+      <p>
+        <label for="thoughts">Additional Thoughts</label><br>
+        <textarea id="thoughts" name="thoughts" placeholder="Post-script: Any additional thoughts you'd like to add" rows="7"></textarea>
+      </p>
+      <p>
+        <label for="signature">*Signature Confirmation</label><br>
+        <input type="checkbox" name="signature" value="Confirmed" required> I confirm that I have entered the right info and this counts as my signature for this letter
+      </p>
+      <!-- <p>
+        <label for="signatureImageOption">Signature Image Option</label><br>
+        <input type="checkbox" name="signatureImageOption" value="Confirmed" onclick="imageActivated()"> I'd like to submit an image of my signature
+      </p>
+      <p id="imageActivated">
+      </p> -->
+      <p>
+        <input type="submit" value="Submit">
+        <input type="reset">
+      </p>
+    </fieldset>
+  </form>
+  <script>
+    function imageActivated() {
+      document.getElementById('imageActivated').innerHTML = '<label for="signatureImage">Signature Image Submit</label><br>';
+      document.getElementById('imageActivated').innerHTML += '<input type="file" name="signatureImage" id="signatureImage">';
+    }
+  </script>
+</body>
+</html>
+

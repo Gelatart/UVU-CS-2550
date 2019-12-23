@@ -1,0 +1,120 @@
+{
+  
+  "fullName": "Daniel Wood",
+  "email": "daniel.f.wood@gmail.com",
+  "categories": [
+    {
+      "name": "Summary",
+      "desc": "I’m highly detail-oriented, meticulous and thorough, adaptable, quick to learn and grasp concepts, a proactive troubleshooter, and able to meet deadlines"
+    },
+    {
+      "name": "Skills",
+      "accomplishments": [
+        "Experience programming with C++, Java, C#, JavaScript, HTML, and Ruby",
+        "Typing speed of 102 WPM (no errors), able to read and understand quickly"
+      ]
+    },
+    {
+      "name": "Educational Background",
+      "schools": [
+        {
+          "school": "Utah Valley University",
+          "duration": "(August 2018 - Present)",
+          "code": "uvu",
+          "desc": "Currently pursuing Computer Science major",
+          "gpa": "3.71 GPA (out of 4.0)"
+        },
+        {
+          "school": "Brigham Young University",
+          "duration": "(September 2013 - April 2014, September 2015 - April 2017)",
+          "code": "byu",
+          "desc": "",
+          "gpa": "3.40 GPA (out of 4.0)"
+        },
+        {
+          "school": "Karl G. Maeser Preparatory Academy",
+          "duration": "(August 2009 - May 2013)",
+          "code": "maeser",
+          "desc": "",
+          "gpa": "3.68 GPA (out of 4.0)"
+        }
+      ]
+    },
+    {
+      "name": "Work Experience",
+      "jobs": [
+        {
+          "company": "CaptionCall",
+          "duration": "(2018 - 2019)",
+          "code": "captionCall",
+          "desc": "Worked as a Captioning Agent, consistently scored high on quality metrics, got great feedback from my team leads and managers, earned raises",
+          "accomplishments": []
+        },
+        {
+          "company": "Nudge/Response Marketing",
+          "duration": "(2016)",
+          "code": "nudge",
+          "desc": "",
+          "accomplishments": [
+            "Worked as a Seminar Registration Consultant for several events",
+            "Consistently stellar in quality and hours, impressed my managers, earned two raises"
+          ]
+        },
+        {
+          "company": "BYU Catering",
+          "duration": "(2015)",
+          "code": "",
+          "desc": "",
+          "accomplishments": []
+        },
+        {
+          "company": "Vector Marketing",
+          "duration": "(2015)",
+          "code": "vector",
+          "desc": "",
+          "accomplishments": [
+            "Sold $4,824 worth of CUTCO and earned two commission promotions",
+            "Considered key staff, set up my own appointments",
+            "Division Manager for Utah met with me one-on-one to discuss management opportunities"
+          ]
+        },
+        {
+          "company": "Ancestry.com",
+          "duration": "(2014)",
+          "code": "ancestry",
+          "desc": "Worked Data Quality Review as a contract position",
+          "accomplishments": []
+        },
+        {
+          "company": "Strategic Staffing",
+          "duration": "(2014 - 2016)",
+          "code": "",
+          "desc": "",
+          "accomplishments": []
+        },
+        {
+          "company": "SOS Employment Group",
+          "duration": "(2013)",
+          "code": "",
+          "desc": "",
+          "accomplishments": []
+        }
+      ]
+    },
+    {
+      "name": "Internships",
+      "internship": "OPNoobs",        
+      "duration": "(Summer 2016)",
+      "code": "opNoobs",
+      "accomplishments": [
+        "Editing Intern: Wrote and edited articles to prepare for publishing, assorted odd jobs",
+        "Internship coordinators were impressed by my work and my helpfulness, was able to coordinate with the other interns and have articles ready in time"
+      ]
+    },
+    {
+      "name": "Awards",
+      "award": "Eagle Scout Award",
+      "year": "(2013)"
+    }
+  ]
+}
