@@ -1,10 +1,3 @@
-/*
-Nice. I just added an two functions from my js assignment for the
-greeking one. one to remove any lists that I generated, and
-another that loads the greeking.json and sends it off to my
-function that displayed the json.
-ALSO LOOK AT PICTURES OF WHITEBOARD AND NOTES
-*/
 var isGreek = false;
 function toggleGreek() {
   if(isGreek == false) {
